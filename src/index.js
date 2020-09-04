@@ -1,10 +1,9 @@
-var Header = require('./header');
-var Content = require('./content');
-var Sidebar = require('./sidebar');
-var avatar = require('./avatar.jpg');
+import avatar from './avatar.jpg'
 
 console.log(avatar)
 
-new Header();
-new Content();
-new Sidebar();
+var img = new Image()
+img.src = avatar;
+
+var root = document.getElementById('root')
+root.appendChild(img)

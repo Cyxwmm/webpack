@@ -8,9 +8,15 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jpg$/,
+                test: /\.(png|jpe?(g)|gif)$/i,
                 use: {
-                    loader: 'file-loader'
+                    loader: 'url-loader',
+                    options: {
+                        //placeholder 占位符
+                        name: '[name]_[hash].[ext]',
+                        outputPath: 'image',
+                        limit: 2048
+                    }
                 }
             }
         ]
