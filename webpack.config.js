@@ -18,6 +18,20 @@ module.exports = {
                         limit: 2048
                     }
                 }
+            },
+            {
+                test: /\.scss$/,
+                loader: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true
+                        }
+                    },
+                    'sass-loader',
+                    'postcss-loader'
+                ]
             }
         ]
     },
