@@ -14,8 +14,10 @@
     },
     "devDependencies": {
         "autoprefixer": "^9.8.6",
+        "clean-webpack-plugin": "^3.0.0",
         "css-loader": "^4.2.2",
         "file-loader": "^6.1.0",
+        "html-webpack-plugin": "^4.4.1",
         "postcss-loader": "^3.0.0",
         "sass": "^1.26.10",
         "sass-loader": "^10.0.2",
