@@ -20,14 +20,20 @@ module.exports = {
                 }
             },
             {
-                test: /\.scss$/,
+                test: /\.(eot|svg|ttf|woff|woff2)$/i,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'font'
+                    }
+                }
+            },
+            {
+                test: /\.css$/,
                 loader: [
                     'style-loader',
                     {
                         loader: 'css-loader',
-                        options: {
-                            modules: true
-                        }
                     },
                     'sass-loader',
                     'postcss-loader'

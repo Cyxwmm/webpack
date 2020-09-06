@@ -1,17 +1,5 @@
-import avatar from './avatar.jpg'
-import createAvatar from './avatar';
-import style from './index.scss';
+import './index.css';
 
-console.log(avatar)
+const root = document.getElementById('root')
 
-var img = new Image()
-img.src = avatar;
-img.classList.add(style.avatar)
-
-var root = document.getElementById('root')
-root.appendChild(img)
-
-createAvatar()
-// const div = document.createElement('div')
-// div.classList.add('test')
-// root.appendChild(div)
+root.innerHTML = '<div class="iconfont iconpretrial_iconcomponent">hello world</div>'
