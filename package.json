@@ -4,7 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "bundle": "webpack"
+        "bundle": "webpack",
+        "start": "webpack-dev-server",
+        "middleware": "node server.js"
     },
     "author": "",
     "license": "ISC",
@@ -16,13 +18,16 @@
         "autoprefixer": "^9.8.6",
         "clean-webpack-plugin": "^3.0.0",
         "css-loader": "^4.2.2",
+        "express": "^4.17.1",
         "file-loader": "^6.1.0",
         "html-webpack-plugin": "^4.4.1",
         "postcss-loader": "^3.0.0",
         "sass": "^1.26.10",
         "sass-loader": "^10.0.2",
         "style-loader": "^1.2.1",
-        "url-loader": "^4.1.0"
+        "url-loader": "^4.1.0",
+        "webpack-dev-middleware": "^3.7.2",
+        "webpack-dev-server": "^3.11.0"
     },
     "browserslist": [
         "last 10 chrome version",

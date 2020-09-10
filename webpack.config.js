@@ -7,6 +7,10 @@ module.exports = {
     // development cheap-module-eval-source-map
     // production cheap-module-source-map
     devtool: 'cheap-module-eval-source-map',
+    devServer: {
+        contentBase: './dist',
+        open: true
+    },
     entry: {
         main: './src/index.js',
     },
@@ -51,6 +55,7 @@ module.exports = {
     }), new CleanWebpackPlugin()],
     output: {
         // publicPath: 'https://cdn.com',
+        publicPath: '/',
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     }
