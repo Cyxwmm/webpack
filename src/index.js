@@ -1,22 +1,7 @@
-// import './index.css';
+// import '@babel/polyfill';
 
-// const btn = document.createElement('button')
-// btn.innerHTML = '点击'
-// btn.onclick = function () {
-//     const div = document.createElement('div')
-//     div.innerHTML = 'item'
-//     document.body.appendChild(div)
-// }
-// document.body.appendChild(btn)
+const arr = [new Promise(() => { }), new Promise(() => { })]
 
-import count from './count';
-import number from './number';
-
-count()
-number()
-
-if (module.hot) {
-    module.hot.accept('./number', () => {
-        number()
-    })
-}
+arr.map(item => {
+    console.log(item)
+})
